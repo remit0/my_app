@@ -17,14 +17,14 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // We can call this method directly in ngOnInit to load data when the component loads
     //this.fetchData();
-    this.test = "finaltest";
+    this.test = 'finaltest';
   }
 
   fetchData() {
     this.helloWorlService.getData().subscribe((data: any) => {
       console.log("DEBUG DATA");
       console.log(data);
-      this.test = data.key;
+      this.test = 'test';
     }, (error) => {
       console.error(error);
     }
