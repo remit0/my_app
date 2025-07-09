@@ -16,7 +16,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // We can call this method directly in ngOnInit to load data when the component loads
-    this.fetchData();
+    //this.fetchData();
+    this.test = "finaltest";
   }
 
   fetchData() {
